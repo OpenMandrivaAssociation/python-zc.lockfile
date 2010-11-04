@@ -1,6 +1,6 @@
 Name:		python-zc.lockfile
 Version:	1.0.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		Development/Python
 License:	Zope Public License
 Summary:	Basic inter-process locks
@@ -27,6 +27,7 @@ and lock file files are separate files.
 %build
 
 %install
+PYTHONDONTWRITEBYTECODE= \
 %__python setup.py install --root=%{buildroot} --record=INSTALLED_FILES
 
 %clean
