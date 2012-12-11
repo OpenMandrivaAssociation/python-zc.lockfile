@@ -1,14 +1,12 @@
 Name:		python-zc.lockfile
 Version:	1.0.0
-Release:	%mkrel 2
+Release:	3
 Group:		Development/Python
 License:	Zope Public License
 Summary:	Basic inter-process locks
 #md5=6cf83766ef9935c33e240b0904c7a45e
 Source:		http://pypi.python.org/packages/source/z/zc.lockfile/zc.lockfile-1.0.0.tar.gz
 URL:		http://pypi.python.org/pypi/zc.lockfile/1.0.0
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 
@@ -29,9 +27,19 @@ and lock file files are separate files.
 %install
 PYTHONDONTWRITEBYTECODE= \
 %__python setup.py install --root=%{buildroot} --record=INSTALLED_FILES
-
-%clean
-%__rm -rf %{buildroot}
+sed -i 's/.*egg-info$//' INSTALLED_FILES
 
 %files -f INSTALLED_FILES
 %defattr(-,root,root)
+
+
+%changelog
+* Thu Nov 04 2010 Paulo Andrade <pcpa@mandriva.com.br> 1.0.0-2mdv2011.0
++ Revision: 593456
++ rebuild (emptylog)
+
+* Fri Aug 07 2009 Paulo Andrade <pcpa@mandriva.com.br> 1.0.0-1mdv2010.0
++ Revision: 411007
+- Initial import of python-zc.lockfile version 1.0.0.
+- python-zc.lockfile
+
