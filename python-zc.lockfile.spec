@@ -1,13 +1,13 @@
 %define debug_package %{nil}
 
 Name:		python-zc.lockfile
-Version:	1.0.2
+Version:	1.1.0
 Release:	1
 Group:		Development/Python
 License:	Zope Public License
 Summary:	Basic inter-process locks
 #md5=6cf83766ef9935c33e240b0904c7a45e
-Source:		http://pypi.python.org/packages/source/z/zc.lockfile/zc.lockfile-%{version}.tar.gz
+Source:		http://pypi.python.org/packages/source/z/zc.lockfile/zc.lockfile-%{version}.zip
 URL:		http://pypi.python.org/pypi/zc.lockfile/1.0.0
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
@@ -44,5 +44,6 @@ sed -i 's/.*egg-info$//' INSTALLED_FILES
 + Revision: 411007
 - Initial import of python-zc.lockfile version 1.0.0.
 - python-zc.lockfile
+
 
 

@@ -1,4 +1,5 @@
 removed_sources:
   zc.lockfile-1.0.0.tar.gz: 0cd4e27ae98d57d709295a04997de64a3a4a78ec
-sources:
   zc.lockfile-1.0.2.tar.gz: 28daffb72617a981558011a5a86891b9cf25e6c3
+sources:
+  zc.lockfile-1.1.0.zip: 16dc103ecf97b8ff198df60b899e4d724272e8b9
