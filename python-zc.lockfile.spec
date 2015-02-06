@@ -2,7 +2,7 @@
 
 Name:		python-zc.lockfile
 Version:	1.1.0
-Release:	1
+Release:	2
 Group:		Development/Python
 License:	Zope Public License
 Summary:	Basic inter-process locks
