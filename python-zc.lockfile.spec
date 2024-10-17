@@ -8,7 +8,7 @@ License:	Zope Public License
 Summary:	Basic inter-process locks
 #md5=6cf83766ef9935c33e240b0904c7a45e
 Source:		http://pypi.python.org/packages/source/z/zc.lockfile/zc.lockfile-%{version}.zip
-URL:		http://pypi.python.org/pypi/zc.lockfile/1.0.0
+URL:		https://pypi.python.org/pypi/zc.lockfile/1.0.0
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 
